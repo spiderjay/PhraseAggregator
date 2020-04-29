@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etsy Tag Aggregator</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div>
+        Max Characters: <input type="number" id="chars" value="20"> Max Tags: <input type="number" id="phrase" value="13">
+        <br>
+        Unwanted Words: <input type="text" id="unwanted" value="a|at|and|of|the|in|on|an|has|to|it|is|if|this|that|or|by|for|with" size="60">
+    </div>
+    <div>
+        <label for="input">Enter Tags:</label>
+    </div>
+    <div>
+        <textarea id="input" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <button onclick="generate()">Generate</button>
+    </div>
+    <div>
+        <label for="output">Output:</label>
+    </div>
+    <div>
+        <textarea id="output" cols="30" rows="10"></textarea>
+    </div>
+</body>
+</html>
